@@ -1,0 +1,15 @@
+.DS_Store
+.idea
+*.html
+*.txt
+# Python:
+*.py[cod]
+*.pyc
+*.so
+*.egg
+*.egg-info
+dist
+build
+
+ghostdriver.log
+*.log

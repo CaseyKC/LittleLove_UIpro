@@ -1,0 +1,7 @@
+<map>
+    <page pageName="KdetailHead">
+            <!--Locator lists -->
+            <locator type="xpath" timeOut="3" value='//*[@id="fund_too"]'>fundraisingButton</locator>
+    </page>
+
+</map>

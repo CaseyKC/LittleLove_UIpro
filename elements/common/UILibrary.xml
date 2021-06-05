@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<map>
+    <page pageName="K_DetailPage">
+        <!--Locator lists -->
+        <locator type="xpath" timeOut="5" value="//input[@placeholder='填写手机号']">loginPhoneInputBox</locator>
+        <locator type="xpath" timeOut="5" value="//input[@placeholder='填写手机验证码']">loginVerificationCodeInputBox</locator>
+	    <locator type="xpath" timeOut="3" value="//button[@type='button' and text()='登录']">loginButton</locator>
+        <locator type="xpath" timeOut="3" value="//ul[@class='ls-userlist']/li">checkSelectAccount</locator>
+
+
+    </page>
+</map>

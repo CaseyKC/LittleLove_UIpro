@@ -1,0 +1,360 @@
+<map>
+    <page pageName="TaikangHealthQuanmin2020Page">
+            <!--Locator lists -->
+            <locator type="xpath" timeOut="3" value="/html/body/div[1]/div/div[1]/div[1]/div/div[2]">scrollTargetButton</locator>
+            <locator type="xpath" timeOut="5" value="//div[@class='confirm' and text()='确认']">acceptClause</locator>
+            <locator type="xpath" timeOut="3" value="//*[@class='bottom-container']//div[@class='btn' and text()='立即投保']">insureButton</locator>
+            <locator type="xpath" timeOut="3" value="//div[@class='button agree']">acceptHealthNotification</locator>
+            <locator type="xpath" timeOut="3" value="//div[@class='pay-success']">assertContent</locator>
+            <locator type="xpath" timeOut="3" value="//input[@class='input-style-insure focus_one']">name</locator>
+            <locator type="xpath" timeOut="3" value="//input[@class='input-style-insure focus_two']">idcard</locator>
+            #条款
+            <locator type="xpath" timeOut="3" value="//*[@class='protocol-name' and text()='《投保须知》']">insurance_policy</locator>
+            <locator type="xpath" timeOut="3" value="/html/body/div[12]/div/div[2]/div">insurance_policy_content</locator>
+            <locator type="xpath" timeOut="3" value="//div[@class='protocolBoxContainer  v-transfer-dom']//a[text()='确定']">insure</locator>
+
+            <locator type="xpath" timeOut="3" value="/html/body/div[1]/div/div[1]/div[3]/div/div[4]/div/div[1]/input">name</locator>
+    </page>
+
+
+    <page pageName="TaikangIllness30w2021Page">
+        <!--Locator lists -->
+        <locator type="xpath" timeOut="3" value="//input[@placeholder='填写或选择被保人姓名']">insureName</locator>
+        <locator type="xpath" timeOut="3" value="//input[@placeholder='请输入被保人身份证']">insureIdCard</locator>
+        <locator type="xpath" timeOut="3" value="//*[@id='scrollTarget']">scrollTargetButton</locator>
+        <locator type="xpath" timeOut="5" value="//div[@class='circle-container']/div">acceptClause</locator>
+	    <locator type="xpath" timeOut="3" value="//*[@class='bottom-container']//div[@class='btn' and text()='立即投保']">insureButton</locator>
+        <locator type="xpath" timeOut="3" value="//div[@class='button agree']">acceptHealthNotification</locator>
+        <locator type="xpath" timeOut="3" value="//*[@class='header']">assertContent</locator>
+        <locator type="xpath" timeOut="3" value="//div[@class='scheme-li' and text()='30万版']">cards30</locator>
+
+
+<!--        条款断言-->
+          #条款
+         #投保须知
+         <locator type="xpath" timeOut="3" value="//*[@class='protocol-name' and text()='《投保须知》']">insurance_policy</locator>
+         <locator type="xpath" timeOut="3" value="//div[@id='main-content']//p[text()='投保须知及声明']">insurance_policy_content</locator>
+         <locator type="xpath" timeOut="3" value="//div[@class='protocolBoxContainer  v-transfer-dom']//a[text()='确定']">insurance_policy_confirm</locator>
+         #健康告知
+         <locator type="xpath" timeOut="3" value="//*[@class='protocol-name' and text()='《健康告知》']">health_notification</locator>
+         <locator type="xpath" timeOut="3" value="/html/body/div[12]/div/div[2]/div/p[1]">health_notification_content</locator>
+         <locator type="xpath" timeOut="3" value="//div[@class='protocolBoxContainer  v-transfer-dom']//a[text()='符合条件']">health_notification_match_condition</locator>
+
+         #保险条款
+         <locator type="xpath" timeOut="3" value="//span[text()='《保险条款》']">insurance_clauses</locator>
+         <locator type="xpath" timeOut="3" value="//div[@id='main-content']//strong[text()='泰康在线财产保险股份有限公司']">insurance_clauses_content</locator>
+         <locator type="xpath" timeOut="3" value="//div[@class='protocolBoxContainer  v-transfer-dom']//a[text()='确定']">insurance_clauses_confirm</locator>
+         #费率表
+         <locator type="xpath" timeOut="3" value="//span[text()='《费率表》']">rate_table</locator>
+         <locator type="xpath" timeOut="3" value="//div[@class='childStyle' and text()='《费率表》- 全民e保重大疾病保险2021版-30万']">rate_table_content</locator>
+         <locator type="xpath" timeOut="3" value="//div[@class='protocolBoxContainer twoPopContainer  v-transfer-dom']//a[text()='确定']">rate_table_confirm</locator>
+
+        #职业类别表
+         <locator type="xpath" timeOut="3" value="//span[text()='《职业类别表》']">occupation_table</locator>
+         <locator type="xpath" timeOut="3" value="//span[text()='泰康在线职业分类表']">occupation_table_content</locator>
+         <locator type="xpath" timeOut="3" value="//div[@class='protocolBoxContainer  v-transfer-dom']//a[@class='popup-header-enter-confirm' and text()='确定']">occupation_table_confirm</locator>
+
+        #注册协议
+         <locator type="xpath" timeOut="3" value="//span[text()='《平台注册协议》']">registration_agreement</locator>
+         <locator type="xpath" timeOut="3" value="//div[@id='main-content']//strong[text()='轻松保用户注册协议']">registration_agreement_content</locator>
+         <locator type="xpath" timeOut="3" value="//div[@class='protocolBoxContainer  v-transfer-dom']//a[text()='确定']">registration_agreement_confirm</locator>
+
+         #客户告知书
+         <locator type="xpath" timeOut="3" value="//span[text()='《客户告知书》']">customer_notification</locator>
+         <locator type="xpath" timeOut="3" value="//div[@id='content-container']//strong[text()='客户告知书']">customer_notification_content</locator>
+         <locator type="xpath" timeOut="3" value="//div[@class='protocolBoxContainer  v-transfer-dom']//a[text()='确定']">customer_notification_confirm</locator>
+        #隐私政策
+         <locator type="xpath" timeOut="3" value="//span[text()='《隐私政策》']">privacy_policy</locator>
+         <locator type="xpath" timeOut="3" value="//div[@id='content-container']//strong[text()='轻松保隐私政策']">privacy_policy_content</locator>
+         <locator type="xpath" timeOut="3" value="//div[@class='protocolBoxContainer  v-transfer-dom']//a[text()='确定']">privacy_policy_confirm</locator>
+     </page>
+
+
+
+     <page pageName="TaikangIllness2021Page">
+            <!--Locator lists -->
+            <locator type="xpath" timeOut="3" value="//input[@class='input-style-insure focus_one']">insureName</locator>
+            <locator type="xpath" timeOut="3" value="//div[@class='card-title' and text()='身份证号']/parent::div">insureIdCard</locator>
+            <locator type="xpath" timeOut="3" value="//div[@class='buy-count']/preceding::div[text()='立即投保']">scrollTargetButton</locator>
+<!--            <locator type="xpath" timeOut="3" value="//div[@class='scheme-box']/div[1]">selectSchemeBox</locator>-->
+<!--            <locator type="xpath" timeOut="3" value="//div[@class='block active new-style']">selectFeeType</locator>-->
+            <locator type="xpath" timeOut="3" value="//*[@class='bottom-container']//div[@class='btn' and text()='立即投保']">insureButton</locator>
+            <locator type="xpath" timeOut="5" value="//div[@class='confirm' and text()='确认']">acceptClause</locator>
+            <locator type="xpath" timeOut="3" value="//div[@class='button agree']">acceptHealthNotification</locator>
+            <locator type="xpath" timeOut="3" value="//div[@class='pay-success']">assertContent</locator>
+
+            <!--  底部投保按钮         -->
+            <locator type="xpath" timeOut="3" value="//div[@class='bottom-container iphone-style' ]//div[@class='btn' ]">insureButtonBottom</locator>
+
+            <!--  投保须知         -->
+            <locator type="xpath" timeOut="3" value="//div[@class='circle-container']/following-sibling::p/span[1]">InsuranceNoticeAssertText</locator>
+            <locator type="xpath" timeOut="3" value="//div[@class='protocolBoxContainer  v-transfer-dom']//a[@class='popup-header-enter-confirm']">InsuranceNoticeSure</locator>
+            <locator type="xpath" timeOut="3" value="//p[@class='pre']">InsuranceNoticePartcontent</locator>
+
+
+            <!--  保险条款         -->
+            <locator type="xpath" timeOut="3" value="//div[@class='circle-container']/following-sibling::p/span[2]">InsuranceClauses</locator>
+            <locator type="xpath" timeOut="3" value="//div[@class='protocolBoxContainer  v-transfer-dom']//a[text()='确定']">InsuranceClausesSure</locator>
+            <locator type="xpath" timeOut="3" value="//strong[text()='合法有效']/parent::p">ClausesPartcontent</locator>
+
+
+            <!--  健康告知         -->
+            <locator type="xpath" timeOut="3" value="//div[@class='circle-container']/following-sibling::p/span[3]">HealthNotification</locator>
+            <locator type="xpath" timeOut="3" value="//div[@class='protocolBoxContainer  v-transfer-dom']//a[text()='符合条件']">HealthNotificationSure</locator>
+            <locator type="xpath" timeOut="3" value="//strong[text()='本保险合同投保人已确认']/parent::p/preceding-sibling::p">HealthNotificationPartcontent</locator>
+
+
+            <!--  费率表         -->
+            <locator type="xpath" timeOut="3" value="//div[@class='circle-container']/following-sibling::p/span[4]">RateTableBut</locator>
+            <locator type="xpath" timeOut="3" value="//div[@class='childStyle' and contains(text(),'10万')]">SelectRate</locator>
+            <locator type="xpath" timeOut="3" value="//div[@class='v-transfer-dom']//a[@class='popup-header-enter']">SelectRateSure</locator>
+            <locator type="xpath" timeOut="3" value="//td[text()='2-12月(月付)']">RatePartcontent</locator>
+
+
+            <!--  职业列表         -->
+            <locator type="xpath" timeOut="3" value="//span[@class='protocol-name' and contains(text(),'职业类别表')]">OccupationCategoryBut</locator>
+            <locator type="xpath" timeOut="3" value="//span[@class='font5']">OccupationCategoryPartcontent</locator>
+
+
+            <!--  隐私政策         -->
+            <locator type="xpath" timeOut="3" value="//span[@class='protocol-name' and contains(text(),'隐私')]">PrivacyPolicyBut</locator>
+            <locator type="xpath" timeOut="3" value="//strong[contains(text(),'轻松保隐私')]">PrivacyPolicyPartcontent</locator>
+
+
+            <!--  用户注册协议         -->
+            <locator type="xpath" timeOut="3" value="//span[@class='protocol-name' and contains(text(),'注册')]">RegistrationAgreementBut</locator>
+            <locator type="xpath" timeOut="3" value="//p[contains(text(),'本协议')][1]">RegistrationAgreementPartcontent</locator>
+
+
+            <!--   客户告知书     -->
+            <locator type="xpath" timeOut="3" value="//span[@class='protocol-name' and contains(text(),'客户')]">CustomerNotificationBut</locator>
+            <locator type="xpath" timeOut="3" value="//p[contains(text(),'尊敬的客户')]/following-sibling::p[1]">CustomerNotificationPartcontent</locator>
+
+
+    </page>
+
+    <page pageName="TaikangHealthQuanminAizhengPage">
+            <!--Locator lists -->
+            <locator type="xpath" timeOut="3" value="//input[@class='input-style-insure focus_one']">insureName</locator>
+            <locator type="xpath" timeOut="3" value="//div[@class='card-title' and text()='身份证号']/parent::div">insureIdCard</locator>
+            <locator type="xpath" timeOut="3" value="//div[@class='buy-count']/preceding::div[text()='立即投保']">scrollTargetButton</locator>
+            <locator type="xpath" timeOut="3" value="//p[@class='next-month-price']/following::div[1]">insureButton</locator>
+            <locator type="xpath" timeOut="5" value="//div[@class='confirm' and text()='确认']">acceptClause</locator>
+            <locator type="xpath" timeOut="3" value="//div[@class='button agree']">acceptHealthNotification</locator>
+            <locator type="xpath" timeOut="3" value="//div[@class='pay-success']">assertContent</locator>
+
+
+            <!--  投保须知         -->
+            <locator type="xpath" timeOut="3" value="//div[@class='circle-container']/following-sibling::p/span[1]">InsuranceNoticeAssertText</locator>
+            <locator type="xpath" timeOut="3" value="//div[@class='protocolBoxContainer  v-transfer-dom']//a[@class='popup-header-enter-confirm']">InsuranceNoticeSure</locator>
+            <locator type="xpath" timeOut="3" value="//p[@class='pre']">InsuranceNoticePartcontent</locator>
+
+
+            <!--  保险条款         -->
+            <locator type="xpath" timeOut="3" value="//div[@class='circle-container']/following-sibling::p/span[2]">InsuranceClauses</locator>
+            <locator type="xpath" timeOut="3" value="//div[@class='protocolBoxContainer  v-transfer-dom']//a[text()='确定']">InsuranceClausesSure</locator>
+            <locator type="xpath" timeOut="3" value="//strong[text()='合法有效']/parent::p[contains(text(),'投保文件')]">ClausesPartcontent</locator>
+
+
+            <!--  健康告知         -->
+            <locator type="xpath" timeOut="3" value="//div[@class='circle-container']/following-sibling::p/span[3]">HealthNotification</locator>
+            <locator type="xpath" timeOut="3" value="//div[@class='protocolBoxContainer  v-transfer-dom']//a[text()='符合条件']">HealthNotificationSure</locator>
+            <locator type="xpath" timeOut="3" value="//p[contains(text(),'被保险人未被诊断患有以下任一疾病，或未出现以下任一体征或检查')]">HealthNotificationPartcontent</locator>
+
+
+            <!--  费率表         -->
+            <locator type="xpath" timeOut="3" value="//div[@class='circle-container']/following-sibling::p/span[4]">RateTableBut</locator>
+            <locator type="xpath" timeOut="3" value="//div[@class='childStyle' and contains(text(),'癌症医疗')]">SelectRate</locator>
+            <locator type="xpath" timeOut="3" value="//div[@class='v-transfer-dom']//a[@class='popup-header-enter']">SelectRateSure</locator>
+            <locator type="xpath" timeOut="3" value="//td[text()='2-12月(月付)']">RatePartcontent</locator>
+
+
+            <!--  特别约定         -->
+            <locator type="xpath" timeOut="3" value="//div[@class='circle-container']/following-sibling::p/span[5]">SpecialAgreementBut</locator>
+            <locator type="xpath" timeOut="3" value="//p[text()='特别约定']/following::a[text()='确定'][2]">SpecialAgreementSure</locator>
+            <locator type="xpath" timeOut="3" value="//p[contains(text(),'本保单对被保险人在上海市质子重离子医院')]">SpecialAgreementPartcontent</locator>
+
+
+             <!--  投保重要提示         -->
+            <locator type="xpath" timeOut="3" value="//div[@class='circle-container']/following-sibling::p/span[6]">ImportantTipsBut</locator>
+            <locator type="xpath" timeOut="3" value="//p[text()='投保重要提示']/following::a[text()='确定'][2]">ImportantTipsSure</locator>
+            <locator type="xpath" timeOut="3" value="//p[contains(text(),'等待期：本产品针对首次投')]">ImportantTipsPartcontent</locator>
+
+
+            <!--  平台注册协议  -->
+            <locator type="xpath" timeOut="3" value="//span[@class='protocol-name' and contains(text(),'注册')]">RegistrationAgreementBut</locator>
+            <locator type="xpath" timeOut="3" value="//p[contains(text(),'本协议')][1]">RegistrationAgreementPartcontent</locator>
+
+
+            <!--   客户告知书     -->
+            <locator type="xpath" timeOut="3" value="//span[@class='protocol-name' and contains(text(),'客户')]">CustomerNotificationBut</locator>
+            <locator type="xpath" timeOut="3" value="//p[contains(text(),'尊敬的客户')]/following-sibling::p[1]">CustomerNotificationPartcontent</locator>
+
+
+             <!--  隐私政策   -->
+            <locator type="xpath" timeOut="3" value="//span[@class='protocol-name' and contains(text(),'隐私')]">PrivacyPolicyBut</locator>
+            <locator type="xpath" timeOut="3" value="//strong[contains(text(),'您需在充分理解并同意本政策')]">PrivacyPolicyPartcontent</locator>
+
+
+
+
+
+    </page>
+
+
+    <page pageName="TaikangIllnessPage">
+            <!--Locator lists -->
+            <locator type="xpath" timeOut="3" value="//input[@class='input-style-insure focus_one']">insureName</locator>
+            <locator type="xpath" timeOut="3" value="//div[@class='card-title' and text()='身份证号']/parent::div">insureIdCard</locator>
+            <locator type="xpath" timeOut="3" value="//div[@class='cell-content flex-col-start']/div[2]">scrollTargetButton</locator>
+            <locator type="xpath" timeOut="3" value="//*[@class='bottom-container']//div[@class='btn' and text()='立即投保']">insureButton</locator>
+            <locator type="xpath" timeOut="5" value="//div[@class='confirm']">acceptClause</locator>
+            <locator type="xpath" timeOut="3" value="//div[@class='button agree']">acceptHealthNotification</locator>
+            <locator type="xpath" timeOut="3" value="//div[@class='pay-success']">assertContent</locator>
+
+
+            <!--  隐私政策   -->
+            <locator type="xpath" timeOut="3" value="//span[@class='protocol-name' and contains(text(),'隐私')]">PrivacyPolicyBut</locator>
+            <locator type="xpath" timeOut="3" value="//strong[contains(text(),'您需在充分理解并同意本政策')]">PrivacyPolicyPartcontent</locator>
+
+
+            <!--  费率表     -->
+            <locator type="xpath" timeOut="3" value="//div[@class='circle-container']/following-sibling::p/span[2]">RateTableBut</locator>
+            <locator type="xpath" timeOut="3" value="//div[@class='childStyle' and contains(text(),'10万')]">SelectRate</locator>
+            <locator type="xpath" timeOut="3" value="//td[text()='30天~1岁(不含)']">RatePartcontent</locator>
+
+
+            <!--  健康告知  -->
+            <locator type="xpath" timeOut="3" value="//div[@class='circle-container']/following-sibling::p/span[3]">HealthNotification</locator>
+            <locator type="xpath" timeOut="3" value="//div[@id='content-container']/div/p[1]">HealthNotificationPartcontent</locator>
+
+
+            <!--  保险条款   -->
+            <locator type="xpath" timeOut="3" value="//div[@class='circle-container']/following-sibling::p/span[4]">InsuranceClauses</locator>
+            <locator type="xpath" timeOut="3" value="//span[contains(text(),'注册号为')]">ClausesPartcontent</locator>
+
+
+            <!--  投保须知   -->
+            <locator type="xpath" timeOut="3" value="//div[@class='circle-container']/following-sibling::p/span[5]">InsuranceNoticeAssertText</locator>
+            <locator type="xpath" timeOut="3" value="//a[@class='external-link']/parent::p">InsuranceNoticePartcontent</locator>
+
+
+            <!--  平台注册协议  -->
+            <locator type="xpath" timeOut="3" value="//span[@class='protocol-name' and contains(text(),'注册')]">RegistrationAgreementBut</locator>
+            <locator type="xpath" timeOut="3" value="//p[contains(text(),'本协议')][1]">RegistrationAgreementPartcontent</locator>
+
+
+            <!--   客户告知书     -->
+            <locator type="xpath" timeOut="3" value="//span[@class='protocol-name' and contains(text(),'客户')]">CustomerNotificationBut</locator>
+            <locator type="xpath" timeOut="3" value="//p[contains(text(),'尊敬的客户')]/following-sibling::p[1]">CustomerNotificationPartcontent</locator>
+
+
+
+
+
+
+    </page>
+
+    <page pageName="TaikangHealth201901Page">
+            <!--Locator lists -->
+            <locator type="xpath" timeOut="3" value="//*[@id='scrollTarget']">scrollTargetButton</locator>
+            #同意条款弹窗
+            <locator type="xpath" timeOut="5" value="//*[@id='scrollTargetContainer']/div[15]/div/div[2]/div/div/div[2]">acceptClause</locator>
+            <locator type="xpath" timeOut="3" value="//*[@class='bottom-container']//div[@class='btn' and text()='立即投保']">insureButton</locator>
+            <locator type="xpath" timeOut="3" value="//div[@class='button agree']">acceptHealthNotification</locator>
+            <locator type="xpath" timeOut="3" value="//div[@class='pay-success']">assertContent</locator>
+            <locator type="xpath" timeOut="3" value="//input[@class='input-style-insure focus_one']">name</locator>
+            <locator type="xpath" timeOut="3" value="/html/body/div[1]/div/div[1]/div[13]/div/div[4]/div/div[2]/input">idcard</locator>
+            #投保须知
+            <locator type="xpath" timeOut="3" value="//*[@class='protocol-name' and text()='《投保须知》']">insurance_policy</locator>
+            <locator type="xpath" timeOut="3" value="/html/body/div[13]/div/div[2]/div">insurance_policy_content</locator>
+            <locator type="xpath" timeOut="3" value="//div[@class='protocolBoxContainer  v-transfer-dom']//a[text()='确定']">insure</locator>
+            #健康告知
+            <locator type="xpath" timeOut="3" value="//*[@class='protocol-name' and text()='《健康告知》']">health_notification</locator>
+            <locator type="xpath" timeOut="3" value="/html/body/div[13]/div/div[2]/div">health_notification_content</locator>
+            <locator type="xpath" timeOut="3" value="/html/body/div[13]/div/div[1]/a[2]">health_notification_insure</locator>
+            #保险条款
+            <locator type="xpath" timeOut="3" value="//*[@class='protocol-name' and text()='《保险条款》']">insurance_clauses</locator>
+            <locator type="xpath" timeOut="3" value="/html/body/div[13]/div/div[2]/div">insurance_clauses_content</locator>
+            <locator type="xpath" timeOut="3" value="//*[@id='style-71210']/div[13]/div/div[1]/a[2]">insurance_clauses_insure</locator>
+
+    </page>
+
+    <page pageName="TaikangESRDGift2Page">
+            <!--Locator lists -->
+            <!--<locator type="xpath" timeOut="3" value="//*[@id='scrollTarget']">scrollTargetButton</locator>-->
+            <locator type="xpath" timeOut="5" value="//*[@id='app']/div/div[1]/div[3]/div/div[2]/div/div/div[2]">acceptClause</locator>
+            <locator type="xpath" timeOut="3" value="//*[@id='app']/div/div[1]/div[5]/div[2]/a">insureButton</locator>
+            <locator type="xpath" timeOut="3" value="//*[@id='style-giftInsure']/div[10]/div/div[5]/a">popup_insureButtons</locator>
+            <locator type="xpath" timeOut="3" value="//div[@class='button agree']">acceptHealthNotification</locator>
+            <!--<locator type="xpath" timeOut="3" value="//div[@class='pay-success']">assertContent</locator>-->
+            <locator type="xpath" timeOut="3" value="/html/body/div[1]/div/div[1]/div[1]/div/div/div/div[1]/div/div[1]/div[2]/input">name</locator>
+            <locator type="xpath" timeOut="3" value="/html/body/div[1]/div/div[1]/div[1]/div/div/div/div[1]/div/div[2]/div[2]/input">idcard</locator>
+            #投保须知
+            <locator type="xpath" timeOut="3" value="//*[@class='protocol-name' and text()='《投保须知》']">insurance_policy</locator>
+            <locator type="xpath" timeOut="3" value="//*[@id='style-giftInsure']/div[12]/div/div[2]/div[1]/div">insurance_policy_content</locator>
+            <locator type="xpath" timeOut="3" value="//div[@class='protocolBoxContainer twoPopContainer  v-transfer-dom']//a[text()='确定']">insure</locator>
+            #健康告知
+            <locator type="xpath" timeOut="3" value="//*[@class='protocol-name' and text()='《健康告知》']">health_notification</locator>
+            <locator type="xpath" timeOut="3" value="//*[@id='style-giftInsure']/div[12]/div/div[2]/div[1]/div">health_notification_content</locator>
+            <locator type="xpath" timeOut="3" value="//div[@class='protocolBoxContainer twoPopContainer  v-transfer-dom']//a[text()='确定']">health_notification_insure</locator>
+            #保险条款
+            <locator type="xpath" timeOut="3" value="//*[@class='protocol-name' and text()='《保险条款》']">insurance_clauses</locator>
+            <locator type="xpath" timeOut="3" value="//*[@id='style-giftInsure']/div[12]/div/div[2]/div[1]/div">insurance_clauses_content</locator>
+            <locator type="xpath" timeOut="3" value="//div[@class='protocolBoxContainer twoPopContainer  v-transfer-dom']//a[text()='确定']">insurance_clauses_insure</locator>
+
+    </page>
+
+     <page pageName="TaikangIllness50w2021Page">
+        <!--Locator lists -->
+        <locator type="xpath" timeOut="3" value="//input[@placeholder='填写或选择被保人姓名']">insureName</locator>
+        <locator type="xpath" timeOut="3" value="//input[@placeholder='请输入被保人身份证']">insureIdCard</locator>
+        <locator type="xpath" timeOut="3" value="//*[@id='scrollTarget']">scrollTargetButton</locator>
+        <locator type="xpath" timeOut="5" value="//div[@class='circle-container']/div">acceptClause</locator>
+	    <locator type="xpath" timeOut="3" value="//*[@class='bottom-container']//div[@class='btn' and text()='立即投保']">insureButton</locator>
+        <locator type="xpath" timeOut="3" value="//div[@class='button agree']">acceptHealthNotification</locator>
+        <locator type="xpath" timeOut="3" value="//*[@class='header']">assertContent</locator>
+        <locator type="xpath" timeOut="3" value="//div[@class='scheme-li' and text()='50万版']">cards50</locator>
+
+
+<!--        条款断言-->
+          #条款
+         #投保须知
+         <locator type="xpath" timeOut="3" value="//*[@class='protocol-name' and text()='《投保须知》']">insurance_policy</locator>
+         <locator type="xpath" timeOut="3" value="//div[@id='main-content']//p[text()='投保须知及声明']">insurance_policy_content</locator>
+         <locator type="xpath" timeOut="3" value="//div[@class='protocolBoxContainer  v-transfer-dom']//a[text()='确定']">insurance_policy_confirm</locator>
+         #健康告知
+         <locator type="xpath" timeOut="3" value="//*[@class='protocol-name' and text()='《健康告知》']">health_notification</locator>
+         <locator type="xpath" timeOut="3" value="/html/body/div[12]/div/div[2]/div/p[1]">health_notification_content</locator>
+         <locator type="xpath" timeOut="3" value="//div[@class='protocolBoxContainer  v-transfer-dom']//a[text()='符合条件']">health_notification_match_condition</locator>
+
+         #保险条款
+         <locator type="xpath" timeOut="3" value="//span[text()='《保险条款》']">insurance_clauses</locator>
+         <locator type="xpath" timeOut="3" value="//div[@id='main-content']//strong[text()='泰康在线财产保险股份有限公司']">insurance_clauses_content</locator>
+         <locator type="xpath" timeOut="3" value="//div[@class='protocolBoxContainer  v-transfer-dom']//a[text()='确定']">insurance_clauses_confirm</locator>
+         #费率表
+         <locator type="xpath" timeOut="3" value="//span[text()='《费率表》']">rate_table</locator>
+         <locator type="xpath" timeOut="3" value="//div[@class='childStyle' and text()='《费率表》- 全民e保重大疾病保险2021版-50万']">rate_table_content</locator>
+         <locator type="xpath" timeOut="3" value="//div[@class='protocolBoxContainer twoPopContainer  v-transfer-dom']//a[text()='确定']">rate_table_confirm</locator>
+
+        #职业类别表
+         <locator type="xpath" timeOut="3" value="//span[text()='《职业类别表》']">occupation_table</locator>
+         <locator type="xpath" timeOut="3" value="//span[text()='泰康在线职业分类表']">occupation_table_content</locator>
+         <locator type="xpath" timeOut="3" value="//div[@class='protocolBoxContainer  v-transfer-dom']//a[@class='popup-header-enter-confirm' and text()='确定']">occupation_table_confirm</locator>
+
+        #注册协议
+         <locator type="xpath" timeOut="3" value="//span[text()='《平台注册协议》']">registration_agreement</locator>
+         <locator type="xpath" timeOut="3" value="//div[@id='main-content']//strong[text()='轻松保用户注册协议']">registration_agreement_content</locator>
+         <locator type="xpath" timeOut="3" value="//div[@class='protocolBoxContainer  v-transfer-dom']//a[text()='确定']">registration_agreement_confirm</locator>
+
+         #客户告知书
+         <locator type="xpath" timeOut="3" value="//span[text()='《客户告知书》']">customer_notification</locator>
+         <locator type="xpath" timeOut="3" value="//div[@id='content-container']//strong[text()='客户告知书']">customer_notification_content</locator>
+         <locator type="xpath" timeOut="3" value="//div[@class='protocolBoxContainer  v-transfer-dom']//a[text()='确定']">customer_notification_confirm</locator>
+        #隐私政策
+         <locator type="xpath" timeOut="3" value="//span[text()='《隐私政策》']">privacy_policy</locator>
+         <locator type="xpath" timeOut="3" value="//div[@id='content-container']//strong[text()='轻松保隐私政策']">privacy_policy_content</locator>
+         <locator type="xpath" timeOut="3" value="//div[@class='protocolBoxContainer  v-transfer-dom']//a[text()='确定']">privacy_policy_confirm</locator>
+     </page>
+
+</map>
